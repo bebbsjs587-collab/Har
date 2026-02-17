@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>خردوات المامو | المتجر الذكي - حلب</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;700;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <!-- TensorFlow.js and DeepLab for Image Segmentation -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.15.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/deeplab@0.2.2"></script>
+    <style>
+      :root {
+        --gold-primary: #d4af37;
+        --gold-secondary: #f9e29c;
+        --dark-bg: #050505;
+      }
+      body {
+        font-family: 'Cairo', sans-serif;
+        background-color: var(--dark-bg);
+        color: #fff9f0;
+        overflow-x: hidden;
+        -webkit-tap-highlight-color: transparent;
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+      ::-webkit-scrollbar {
+        width: 3px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0a0a0a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #b8860b, #d4af37);
+        border-radius: 10px;
+      }
+      .bg-gold-luxury { 
+        background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #f9e29c 100%); 
+      }
+      .text-gold-luxury {
+        background: linear-gradient(135deg, #d4af37 0%, #f9e29c 50%, #b8860b 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.02);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(212, 175, 55, 0.1);
+      }
+      @keyframes scan-line {
+        0% { transform: translateY(-100%); opacity: 0; }
+        50% { opacity: 1; }
+        100% { transform: translateY(300%); opacity: 0; }
+      }
+      .animate-scan { animation: scan-line 3s ease-in-out infinite; }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.460.0",
+    "@google/genai": "https://esm.sh/@google/genai@0.8.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "express": "https://esm.sh/express@^5.2.1",
+    "path": "https://esm.sh/path@^0.12.7",
+    "dotenv": "https://esm.sh/dotenv@^17.3.1",
+    "@capacitor/cli": "https://esm.sh/@capacitor/cli@^8.1.0",
+    "cors": "https://esm.sh/cors@^2.8.6",
+    "url": "https://esm.sh/url@^0.11.4",
+    "mongodb": "https://esm.sh/mongodb@^7.1.0"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
